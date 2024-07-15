@@ -17,6 +17,7 @@
 		1A65665C2C44F97000FBCD6E /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65665B2C44F97000FBCD6E /* FrameworkDetailView.swift */; };
 		1A65665E2C44FA4300FBCD6E /* FrameworkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65665D2C44FA4300FBCD6E /* FrameworkButtonView.swift */; };
 		1A6566642C45028A00FBCD6E /* FrameworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6566632C45028A00FBCD6E /* FrameworkViewModel.swift */; };
+		1A6566662C4507A500FBCD6E /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6566652C4507A500FBCD6E /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		1A65665B2C44F97000FBCD6E /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		1A65665D2C44FA4300FBCD6E /* FrameworkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkButtonView.swift; sourceTree = "<group>"; };
 		1A6566632C45028A00FBCD6E /* FrameworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewModel.swift; sourceTree = "<group>"; };
+		1A6566652C4507A500FBCD6E /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				1A65665B2C44F97000FBCD6E /* FrameworkDetailView.swift */,
 				1A65665D2C44FA4300FBCD6E /* FrameworkButtonView.swift */,
 				1A6566552C44F3F700FBCD6E /* HomeView.swift */,
+				1A6566652C4507A500FBCD6E /* SafariView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6566462C44F32A00FBCD6E /* Apple_FrameworksApp.swift in Sources */,
+				1A6566662C4507A500FBCD6E /* SafariView.swift in Sources */,
 				1A6566582C44F48600FBCD6E /* MockData.swift in Sources */,
 				1A65665C2C44F97000FBCD6E /* FrameworkDetailView.swift in Sources */,
 				1A65665E2C44FA4300FBCD6E /* FrameworkButtonView.swift in Sources */,

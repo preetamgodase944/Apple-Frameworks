@@ -10,6 +10,7 @@ import SwiftUI
 struct FrameworkDetailView: View {
     
     @Binding var isShown: Bool
+    @State var isSafariShown: Bool = false
     
     let framework: Framework
     
@@ -33,7 +34,12 @@ struct FrameworkDetailView: View {
                 .font(.body)
                 .padding()
             Spacer()
-            FrameworkButtonView()
+            FrameworkButtonView(isSafariDisplayed: $isSafariShown)
+        }
+        .fullScreenCover(isPresented: $isSafariShown) {
+            if let url = URL(string: framework.urlString) {
+                SafariView(url: url)
+            }
         }
     }
 }

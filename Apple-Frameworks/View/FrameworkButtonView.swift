@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct FrameworkButtonView: View {
+    
+    @Binding var isSafariDisplayed: Bool
+    
     var body: some View {
         Button {
-            
+            isSafariDisplayed = true
         } label: {
             Text("Learn More")
                 .font(.title2)
@@ -24,5 +27,5 @@ struct FrameworkButtonView: View {
 }
 
 #Preview {
-    FrameworkButtonView()
+    FrameworkButtonView(isSafariDisplayed: .constant(true))
 }
