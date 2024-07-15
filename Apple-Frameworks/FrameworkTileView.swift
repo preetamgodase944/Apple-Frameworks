@@ -8,21 +8,28 @@
 import SwiftUI
 
 struct FrameworkTileView: View {
+    let framework: Framework
+    
+    init(_ framework: Framework) {
+        self.framework = framework
+    }
+    
     var body: some View {
         VStack {
-            Image("arkit")
+            Image(framework.imageName)
                 .resizable()
                 .frame(width: 90,height: 90)
                 .aspectRatio(contentMode: .fit)
-            Text("ARKit")
+            Text(framework.name)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.5)
         }
+        .padding()
     }
 }
 
 #Preview {
-    FrameworkTileView()
+    FrameworkTileView(Framework(name: "ARKit", imageName: "arkit", urlString: "", description: ""))
 }

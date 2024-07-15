@@ -15,11 +15,14 @@ struct Home: View {
     ]
     var body: some View {
         NavigationStack {
-            LazyVGrid(columns: columns) {
-                ForEach(MockData.frameworks) { framework in
-                    FrameworkTileView()
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(MockData.frameworks) { framework in
+                        FrameworkTileView(framework)
+                    }
                 }
             }
+            .navigationTitle("🍎 Frameworks")
         }
     }
 }
