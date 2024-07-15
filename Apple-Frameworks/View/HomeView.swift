@@ -19,23 +19,19 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                LazyVGrid(columns: columns) {
-                    ForEach(MockData.frameworks) { framework in
+            List {
+                ForEach(MockData.frameworks) { framework in
+                    NavigationLink(destination: FrameworkDetailView(
+                        isShown: $viewModel.isFrameworkSelected,
+                        framework: framework)) {
                         FrameworkTileView(framework)
-                            .onTapGesture {
-                                viewModel.selectedFramework = framework
-                            }
                     }
+                    
                 }
             }
             .navigationTitle("🍎 Frameworks")
         }
-        .sheet(isPresented: $viewModel.isFrameworkSelected) {
-            if let selectedFramework = viewModel.selectedFramework {
-                FrameworkDetailView(isShown: $viewModel.isFrameworkSelected, framework: selectedFramework)
-            }
-        }
+        .tint(Color(.label))
     }
 }
 

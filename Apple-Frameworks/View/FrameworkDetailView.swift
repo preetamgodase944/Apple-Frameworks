@@ -16,18 +16,18 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
-                Button {
-                    isShown = false
-                } label: {
-                    Image(systemName: "multiply")
-                        .foregroundStyle(Color(.label))
-                        .imageScale(.large)
-                        .frame(width: 44,height: 44)
-                }
-                .padding()
-            }
+//            HStack {
+//                Spacer()
+//                Button {
+//                    isShown = false
+//                } label: {
+//                    Image(systemName: "multiply")
+//                        .foregroundStyle(Color(.label))
+//                        .imageScale(.large)
+//                        .frame(width: 44,height: 44)
+//                }
+//                .padding()
+//            }
             Spacer()
             FrameworkTileView(framework)
             Text(framework.description)
