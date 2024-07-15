@@ -21,15 +21,15 @@ struct HomeView: View {
         NavigationStack {
             List {
                 ForEach(MockData.frameworks) { framework in
-                    NavigationLink(destination: FrameworkDetailView(
-                        isShown: $viewModel.isFrameworkSelected,
-                        framework: framework)) {
+                    NavigationLink(value: framework) {
                         FrameworkTileView(framework)
                     }
-                    
                 }
             }
             .navigationTitle("🍎 Frameworks")
+            .navigationDestination(for: Framework.self) { framework in
+                FrameworkDetailView(framework: framework)
+            }
         }
         .tint(Color(.label))
     }
