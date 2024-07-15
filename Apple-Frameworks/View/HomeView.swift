@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  HomeView.swift
 //  Apple-Frameworks
 //
 //  Created by Preetam Godase on 15/07/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct HomeView: View {
     let columns = [
         GridItem(.flexible()),
         GridItem(),
@@ -28,5 +28,5 @@ struct Home: View {
 }
 
 #Preview {
-    Home()
+    HomeView()
 }
