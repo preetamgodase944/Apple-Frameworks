@@ -16,6 +16,7 @@
 		1A65665A2C44F4A200FBCD6E /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6566592C44F4A200FBCD6E /* Framework.swift */; };
 		1A65665C2C44F97000FBCD6E /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65665B2C44F97000FBCD6E /* FrameworkDetailView.swift */; };
 		1A65665E2C44FA4300FBCD6E /* FrameworkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65665D2C44FA4300FBCD6E /* FrameworkButtonView.swift */; };
+		1A6566642C45028A00FBCD6E /* FrameworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6566632C45028A00FBCD6E /* FrameworkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1A6566592C44F4A200FBCD6E /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		1A65665B2C44F97000FBCD6E /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		1A65665D2C44FA4300FBCD6E /* FrameworkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkButtonView.swift; sourceTree = "<group>"; };
+		1A6566632C45028A00FBCD6E /* FrameworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				1A6566452C44F32A00FBCD6E /* Apple_FrameworksApp.swift */,
 				1A65665F2C44FEE900FBCD6E /* Model */,
 				1A6566602C44FEFD00FBCD6E /* View */,
+				1A6566622C45027300FBCD6E /* ViewModel */,
 				1A6566492C44F32B00FBCD6E /* Assets.xcassets */,
 				1A65664B2C44F32B00FBCD6E /* Preview Content */,
 			);
@@ -96,6 +99,14 @@
 				1A6566552C44F3F700FBCD6E /* HomeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1A6566622C45027300FBCD6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A6566632C45028A00FBCD6E /* FrameworkViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 				1A65665C2C44F97000FBCD6E /* FrameworkDetailView.swift in Sources */,
 				1A65665E2C44FA4300FBCD6E /* FrameworkButtonView.swift in Sources */,
 				1A6566562C44F3F700FBCD6E /* HomeView.swift in Sources */,
+				1A6566642C45028A00FBCD6E /* FrameworkViewModel.swift in Sources */,
 				1A65665A2C44F4A200FBCD6E /* Framework.swift in Sources */,
 				1A6566542C44F3C800FBCD6E /* FrameworkTileView.swift in Sources */,
 			);

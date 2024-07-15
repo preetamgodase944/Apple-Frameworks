@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
+    
+    @Binding var isShown: Bool
+    
+    let framework: Framework
+    
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 Button {
-                    
+                    isShown = false
                 } label: {
                     Image(systemName: "multiply")
                         .foregroundStyle(Color(.label))
@@ -23,8 +28,8 @@ struct FrameworkDetailView: View {
                 .padding()
             }
             Spacer()
-            FrameworkTileView(MockData.sampleFramework)
-            Text(MockData.sampleFramework.description)
+            FrameworkTileView(framework)
+            Text(framework.description)
                 .font(.body)
                 .padding()
             Spacer()
@@ -34,5 +39,5 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView()
+    FrameworkDetailView(isShown: .constant(true), framework: MockData.sampleFramework)
 }
