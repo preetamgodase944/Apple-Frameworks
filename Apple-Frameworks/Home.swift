@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct Home: View {
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(),
+        GridItem()
+    ]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            LazyVGrid(columns: columns) {
+                ForEach(MockData.frameworks) { framework in
+                    FrameworkTileView()
+                }
+            }
+        }
     }
 }
 
